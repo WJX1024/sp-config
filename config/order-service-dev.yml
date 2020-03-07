@@ -1,6 +1,9 @@
 spring:
   application:
     name: order-service
+  cloud:
+    config:
+      override-none: true
 
 server:
   port: 8201
@@ -18,4 +21,5 @@ management:
   endpoints:
     web:
       exposure:
-        include: hystrix.stream     
+        include: hystrix.stream  
+          
